@@ -13,6 +13,8 @@ __version__ = '1'
 
 class CSVreader():
 
+    sn = " "
+
     """
         filename ist der Name des zu bearbeitenden CSV-Files
     """
@@ -83,15 +85,12 @@ class CSVreader():
 
 
 
-def main():
+if __name__ == "__main__":
     """
     Definition der Main, Aufrufen der Read und Write Methoden
     """
-    csv = CSVreader("Wahl.csv") #Angeben der Datei
+    csv = CSVreader("WahlKopie.csv") #Angeben der Datei
     read = csv.csv_read() #Lesen der Datei
     csv.csv_write("WahlNeu.csv", '\t') #Schreiben in ein neues File
     #print (read) #Ausgeben des Eingelesenen
-
-main()
-
 
