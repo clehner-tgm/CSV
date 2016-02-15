@@ -12,7 +12,7 @@ class FibonacciTest(unittest.TestCase):
         self.assertEqual(Fibonacci.fib(5),5)
 
     def testCalculation3(self):
-        self.assertEqual(Fibonacci.fib(1),5)
+        self.assertEqual(Fibonacci.fib(1),1)
 
 if __name__ == "__main__":
     unittest.main()
